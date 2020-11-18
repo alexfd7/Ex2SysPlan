@@ -11,7 +11,7 @@ Quando adicionado no Angular, pela aplicação estar localmente está dando prob
 
 "Access to XMLHttpRequest at 'https://zeit-endpoint.brmaeji.now.sh/api/auth' from origin 'http://localhost:56371' has been blocked by CORS policy: Response to preflight request doesn't pass access control check: No 'Access-Control-Allow-Origin' header is present on the requested resource."
 
-Para contonar esse problema no back-end da API localizada em "https://zeit-endpoint.brmaeji.now.sh/api/auth", 
+Para habilitar o envio eu teria que subir em uma máquina em produção, ou desabilitando o CORS no back-end da API localizada em "https://zeit-endpoint.brmaeji.now.sh/api/auth", 
 deve-se configurar/adicionar a seguinte regra "Access-Control-Allow-Origin: *".
 
 
@@ -19,9 +19,8 @@ deve-se configurar/adicionar a seguinte regra "Access-Control-Allow-Origin: *".
 
 Sobre esse item: "1a) Servir interface web composta de um index.html e um arquivo .js com a aplicação em Angular."
 
-São tecnologias (engines) responsáveis por criarem o Front-End: Angular,React, Vue. Não faz sentido voce adotar uma tecnologia
-que será responsável pela criação de todo o seu Front-End de forma isolada do Back-End e
- Consumir de uma API (Back-End) que te retorna arquivos .html e arquivos .js.
+O Vue.Js é uma tecnologia (uma engine) responsável por criar todo Front-End. Não faz sentido voce adotar esta tecnologia
+responsável pela criação do FRONT-END de forma isolada do BACK-END  e consumir de uma API (BACK-END) retornos de arquivos .html e arquivos .js.
 
 
 
